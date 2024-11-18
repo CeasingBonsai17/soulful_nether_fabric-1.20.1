@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "soulfulnether:block/fright_roots"
+  }
+}

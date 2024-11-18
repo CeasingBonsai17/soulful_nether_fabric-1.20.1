@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "soulfulnether",
+	"version": "${version}",
+	"name": "Soulful Nether",
+	"description": "Nether QOL changes!",
+	"authors": [
+		"CeasingBonsai17"
+	],
+	"contributors": [
+	"DigitalPear"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/soulfulnether",
+		"sources": "https://github.com/CeasingBonsai17/soulfull-nether-1.20.1"
+	},
+	"license": "MIT",
+	"icon": "assets/soulfulnether/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+		],
+		"main": [
+			"net.bon.soulfulnether.SoulfulNether"
+		],
+		"client": [
+			"net.bon.soulfulnether.SoulfulNetherClient"
+		],
+		"terrablender": [
+			"net.bon.soulfulnether.SoulfulTerraBlender"
+		]
+	},
+	"mixins": [
+		"soulfulnether.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

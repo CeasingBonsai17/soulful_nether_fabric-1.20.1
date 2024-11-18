@@ -1,0 +1,82 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 96,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:weighted_state_provider",
+            "entries": [
+              {
+                "weight": 30,
+                "data": {
+                  "Name": "soulfulnether:fright_roots"
+                }
+              },
+              {
+                "weight": 7,
+                "data": {
+                  "Name": "minecraft:nether_sprouts"
+                }
+              },
+              {
+                "weight": 11,
+                "data": {
+                  "Name": "soulfulnether:fright_fungus"
+                }
+              },
+              {
+                "weight": 3,
+                "data": {
+                  "Name": "minecraft:crimson_fungus"
+                }
+              },
+              {
+                "weight": 15,
+                "data": {
+                  "Name": "minecraft:air"
+                }
+              },
+              {
+                "weight": 20,
+                "data": {
+                  "Name": "minecraft:soul_fire"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:all_of",
+            "predicates": [
+              {
+                "type": "minecraft:matching_blocks",
+                "blocks": "minecraft:air"
+              },
+              {
+                "type": "minecraft:matching_blocks",
+                "offset": [
+                  0,
+                  -1,
+                  0
+                ],
+                "blocks": [
+                  "soulfulnether:fright_wart_block",
+                  "minecraft:basalt"
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

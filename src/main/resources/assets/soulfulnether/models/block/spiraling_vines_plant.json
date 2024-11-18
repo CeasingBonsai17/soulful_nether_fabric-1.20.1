@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "soulfulnether:block/spiraling_vines_plant"
+  }
+}

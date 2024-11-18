@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "soulfulnether:block/soulroots_stage2"
+  }
+}

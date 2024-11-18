@@ -1,0 +1,13 @@
+{
+  "values": [
+    "#minecraft:nylium",
+    "minecraft:netherrack",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    {
+      "id": "netherexp:ecto_soul_sand",
+      "required": false
+    },
+    "minecraft:blackstone"
+  ]
+}
