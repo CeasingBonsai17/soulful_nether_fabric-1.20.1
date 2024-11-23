@@ -1,13 +1,10 @@
 {
   "values": [
-    "#minecraft:nylium",
-    "minecraft:netherrack",
-    "minecraft:soul_sand",
-    "minecraft:soul_soil",
+    "#soulfulnether:lichoss_patch_replaceable",
     {
       "id": "netherexp:ecto_soul_sand",
       "required": false
     },
-    "minecraft:blackstone"
+    "minecraft:basalt"
   ]
 }

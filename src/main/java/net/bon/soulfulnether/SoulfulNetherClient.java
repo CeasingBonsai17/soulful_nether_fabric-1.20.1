@@ -17,8 +17,10 @@ public class SoulfulNetherClient implements ClientModInitializer {
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.FRIGHT_DOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.FRIGHT_TRAPDOOR, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.FRIGHT_FUNGUS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.EMBER_ROOTS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.FRIGHT_ROOTS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.POTTED_FRIGHT_FUNGUS, RenderLayer.getCutout());
+        BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.POTTED_EMBER_ROOTS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.POTTED_FRIGHT_ROOTS, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.SPIRALING_VINES, RenderLayer.getCutout());
         BlockRenderLayerMap.INSTANCE.putBlock(SoulfulBlocks.SPIRALING_VINES_PLANT, RenderLayer.getCutout());

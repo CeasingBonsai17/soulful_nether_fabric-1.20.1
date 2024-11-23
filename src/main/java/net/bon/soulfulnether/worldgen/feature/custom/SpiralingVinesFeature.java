@@ -87,7 +87,7 @@ public class SpiralingVinesFeature extends Feature<SpiralingVinesFeatureConfig> 
             return true;
         } else {
             BlockState blockState = world.getBlockState(pos.down());
-            return !blockState.isOf(SoulfulBlocks.FRIGHT_WART_BLOCK) && !blockState.isOf(Blocks.BASALT) && !blockState.isOf(Blocks.SOUL_SAND) && !blockState.isOf(Blocks.SOUL_SOIL);
+            return !blockState.isOf(SoulfulBlocks.FRIGHT_WART_BLOCK);
         }
     }
 }

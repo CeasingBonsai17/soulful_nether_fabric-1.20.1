@@ -31,6 +31,7 @@ public class SoulfulItemGroups {
                         entries.add(SoulfulBlocks.FRIGHT_BUTTON);
                         entries.add(SoulfulBlocks.LICHOSS_BLOCK);
                         entries.add(SoulfulBlocks.LICHOSS_CARPET);
+                        entries.add(SoulfulBlocks.EMBER_ROOTS);
                         entries.add(SoulfulBlocks.FRIGHT_WART_BLOCK);
                         entries.add(SoulfulBlocks.FRIGHT_FUNGUS);
                         entries.add(SoulfulBlocks.FRIGHT_ROOTS);

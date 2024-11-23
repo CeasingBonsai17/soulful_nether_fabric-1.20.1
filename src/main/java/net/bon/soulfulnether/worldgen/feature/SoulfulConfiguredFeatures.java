@@ -11,7 +11,9 @@ public class SoulfulConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> LICHOSS_PATCH_BONEMEAL = registerKey("fright_forest/lichoss_patch_bonemeal");
     public static final RegistryKey<ConfiguredFeature<?, ?>> LICHOSS_PATCH = registerKey("fright_forest/lichoss_patch");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SPIRALING_VINES = registerKey("fright_forest/spiraling_vines");
-    public static final RegistryKey<ConfiguredFeature<?, ?>> FRIGHT_FOREST_VEGETATION = registerKey("fright_forest/fright_forest_vegetation");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FRIGHT_FUNGUS_VEGETATION = registerKey("fright_forest/fright_fungus_vegetation");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> HANGING_EMBER_ROOTS = registerKey("fright_forest/hanging_hanging_ember_roots");
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BASALT_VEGETATION = registerKey("fright_forest/basalt_vegetation");
     public static final RegistryKey<ConfiguredFeature<?, ?>> SOUL_FIRE_PATCH_LICHOSS = registerKey("fright_forest/patch_soul_fire_lichoss");
     public static final RegistryKey<ConfiguredFeature<?, ?>> BASALT_ROCK = registerKey("fright_forest/basalt_rock");
 

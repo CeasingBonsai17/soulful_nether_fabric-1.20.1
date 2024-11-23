@@ -12,39 +12,15 @@
             "type": "minecraft:weighted_state_provider",
             "entries": [
               {
-                "weight": 30,
+                "weight": 10,
                 "data": {
-                  "Name": "soulfulnether:fright_roots"
+                  "Name": "soulfulnether:ember_roots"
                 }
               },
               {
-                "weight": 7,
-                "data": {
-                  "Name": "minecraft:nether_sprouts"
-                }
-              },
-              {
-                "weight": 11,
-                "data": {
-                  "Name": "soulfulnether:fright_fungus"
-                }
-              },
-              {
-                "weight": 3,
-                "data": {
-                  "Name": "minecraft:crimson_fungus"
-                }
-              },
-              {
-                "weight": 15,
+                "weight": 2,
                 "data": {
                   "Name": "minecraft:air"
-                }
-              },
-              {
-                "weight": 20,
-                "data": {
-                  "Name": "minecraft:soul_fire"
                 }
               }
             ]
@@ -69,7 +45,6 @@
                   0
                 ],
                 "blocks": [
-                  "soulfulnether:fright_wart_block",
                   "minecraft:basalt"
                 ]
               }

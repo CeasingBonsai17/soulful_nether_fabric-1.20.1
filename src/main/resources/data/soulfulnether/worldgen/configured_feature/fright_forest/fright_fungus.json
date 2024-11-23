@@ -1,87 +1,123 @@
 {
-  "type": "minecraft:huge_fungus",
+  "type": "minecraft:tree",
   "config": {
-    "hat_state": {
-      "Name": "soulfulnether:fright_wart_block"
+    "ignore_vines": true,
+    "force_dirt": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 1,
+      "lower_size": 0,
+      "upper_size": 1
     },
-    "decor_state": {
-      "Name": "minecraft:shroomlight"
-    },
-    "stem_state": {
-      "Name": "soulfulnether:fright_stem",
-      "Properties": {
-        "axis": "y"
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "soulfulnether:lichoss_block"
       }
     },
-    "valid_base_block": {
-      "Name": "soulfulnether:lichoss_block"
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "soulfulnether:fright_stem",
+        "Properties": {
+          "axis": "y"
+        }
+      }
     },
-    "replaceable_blocks": {
-      "type": "minecraft:matching_blocks",
-      "blocks": [
-        "minecraft:oak_sapling",
-        "minecraft:spruce_sapling",
-        "minecraft:birch_sapling",
-        "minecraft:jungle_sapling",
-        "minecraft:acacia_sapling",
-        "minecraft:cherry_sapling",
-        "minecraft:dark_oak_sapling",
-        "minecraft:mangrove_propagule",
-        "minecraft:dandelion",
-        "minecraft:torchflower",
-        "minecraft:poppy",
-        "minecraft:blue_orchid",
-        "minecraft:allium",
-        "minecraft:azure_bluet",
-        "minecraft:red_tulip",
-        "minecraft:orange_tulip",
-        "minecraft:white_tulip",
-        "minecraft:pink_tulip",
-        "minecraft:oxeye_daisy",
-        "minecraft:cornflower",
-        "minecraft:wither_rose",
-        "minecraft:lily_of_the_valley",
-        "minecraft:brown_mushroom",
-        "minecraft:red_mushroom",
-        "minecraft:wheat",
-        "minecraft:sugar_cane",
-        "minecraft:attached_pumpkin_stem",
-        "minecraft:attached_melon_stem",
-        "minecraft:pumpkin_stem",
-        "minecraft:melon_stem",
-        "minecraft:lily_pad",
-        "minecraft:nether_wart",
-        "minecraft:cocoa",
-        "minecraft:carrots",
-        "minecraft:potatoes",
-        "minecraft:chorus_plant",
-        "minecraft:chorus_flower",
-        "minecraft:torchflower_crop",
-        "minecraft:pitcher_crop",
-        "minecraft:beetroots",
-        "minecraft:sweet_berry_bush",
-        "minecraft:warped_fungus",
-        "soulfulnether:fright_fungus",
-        "minecraft:crimson_fungus",
-        "minecraft:weeping_vines",
-        "minecraft:weeping_vines_plant",
-        "minecraft:twisting_vines",
-        "minecraft:twisting_vines_plant",
-        "soulfulnether:spiraling_vines",
-        "soulfulnether:spiraling_vines_plant",
-        "minecraft:cave_vines",
-        "minecraft:cave_vines_plant",
-        "minecraft:spore_blossom",
-        "minecraft:azalea",
-        "minecraft:flowering_azalea",
-        "minecraft:moss_carpet",
-        "soulfulnether:lichoss_carpet",
-        "minecraft:pink_petals",
-        "minecraft:big_dripleaf",
-        "minecraft:big_dripleaf_stem",
-        "minecraft:small_dripleaf"
-      ]
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "soulfulnether:fright_wart_block"
+      }
     },
-    "planted": false
+    "trunk_placer": {
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 4,
+      "height_rand_a": 9,
+      "height_rand_b": 0
+    },
+    "foliage_placer": {
+      "type": "minecraft:dark_oak_foliage_placer",
+      "radius": 1,
+      "offset": 0
+    },
+    "decorators": [
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.4,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:simple_state_provider",
+          "state": {
+            "Name": "soulfulnether:fright_wart_block"
+          }
+        },
+        "directions": [
+          "down"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.1,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 2,
+              "data": {
+                "Name": "minecraft:shroomlight"
+              }
+            },
+            {
+              "weight": 5,
+              "data": {
+                "Name": "minecraft:air"
+              }
+            }
+          ]
+        },
+        "directions": [
+          "down"
+        ]
+      },
+      {
+        "type": "minecraft:attached_to_leaves",
+        "probability": 0.6,
+        "exclusion_radius_xz": 0,
+        "exclusion_radius_y": 0,
+        "required_empty_blocks": 1,
+        "block_provider": {
+          "type": "minecraft:weighted_state_provider",
+          "entries": [
+            {
+              "weight": 25,
+              "data": {
+                "Name": "soulfulnether:fright_roots"
+              }
+            },
+            {
+              "weight": 10,
+              "data": {
+                "Name": "soulfulnether:ember_roots"
+              }
+            },
+            {
+              "weight": 8,
+              "data": {
+                "Name": "minecraft:air"
+              }
+            }
+          ]
+        },
+        "directions": [
+          "up"
+        ]
+      }
+    ]
   }
 }

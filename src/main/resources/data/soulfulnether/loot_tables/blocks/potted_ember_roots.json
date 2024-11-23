@@ -22,7 +22,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "soulfulnether:fright_roots"
+          "name": "soulfulnether:ember_roots"
         }
       ],
       "conditions": [
@@ -32,5 +32,5 @@
       ]
     }
   ],
-  "random_sequence": "soulfulnether:blocks/potted_fright_roots"
+  "random_sequence": "soulfulnether:blocks/potted_ember_roots"
 }

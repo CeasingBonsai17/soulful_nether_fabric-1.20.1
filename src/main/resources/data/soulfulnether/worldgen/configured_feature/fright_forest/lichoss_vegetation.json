@@ -17,19 +17,19 @@
           }
         },
         {
-          "weight": 30,
+          "weight": 20,
           "data": {
-            "Name": "soulfulnether:fright_roots"
+            "Name": "soulfulnether:ember_roots"
           }
         },
         {
-          "weight": 10,
+          "weight": 8,
           "data": {
             "Name": "minecraft:nether_sprouts"
           }
         },
         {
-          "weight": 7,
+          "weight": 4,
           "data": {
             "Name": "minecraft:air"
           }

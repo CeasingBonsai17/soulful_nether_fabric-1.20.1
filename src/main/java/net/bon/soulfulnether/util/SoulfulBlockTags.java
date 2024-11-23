@@ -13,7 +13,9 @@ public final class SoulfulBlockTags {
         public static final TagKey<Block> FRIGHT_WART_BLOCKS = createTag("fright_wart_blocks");
         public static final TagKey<Block> LICHOSS = createTag("lichoss");
         public static final TagKey<Block> LICHOSS_REPLACEABLE = createTag("lichoss_replaceable");
+        public static final TagKey<Block> LICHOSS_PATCH_REPLACEABLE = createTag("lichoss_patch_replaceable");
         public static final TagKey<Block> FRIGHT_FOREST_GROUND_BLOCKS = createTag("fright_forest_ground_blocks");
+        public static final TagKey<Block> VALID_ROOT_BASES = createTag("valid_root_bases");
 
     private SoulfulBlockTags() {
     }

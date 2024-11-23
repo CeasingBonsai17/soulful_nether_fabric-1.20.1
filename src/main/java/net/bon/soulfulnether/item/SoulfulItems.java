@@ -10,6 +10,7 @@ import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.Direction;
 
 public class SoulfulItems {
     public static final Item SOULROOT_SEEDS = registerItem("soulroot_seeds", new AliasedBlockItem(SoulfulBlocks.SOULROOTS, new FabricItemSettings()));
@@ -18,7 +19,6 @@ public class SoulfulItems {
     public static final Item SOULROOT_PIE = registerItem("soulroot_pie", new Item(new FabricItemSettings().food(SoulfulFoodComponents.soulroot_pie)));
     public static final Item FRIGHT_SIGN = registerItem("fright_sign", new SignItem(new FabricItemSettings().maxCount(16), SoulfulBlocks.FRIGHT_SIGN, SoulfulBlocks.FRIGHT_WALL_SIGN));
     public static final Item FRIGHT_HANGING_SIGN = registerItem("fright_hanging_sign", new HangingSignItem(SoulfulBlocks.FRIGHT_HANGING_SIGN, SoulfulBlocks.FRIGHT_WALL_HANGING_SIGN, (new Item.Settings()).maxCount(16)));
-
 
     private static void addItemsToIngredientsItemGroup(FabricItemGroupEntries entries) {
     entries.add(SOULROOT);

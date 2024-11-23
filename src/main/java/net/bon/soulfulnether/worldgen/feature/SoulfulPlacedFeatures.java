@@ -11,7 +11,9 @@ public class SoulfulPlacedFeatures {
     public static final RegistryKey<PlacedFeature> FRIGHT_FUNGUS = registerKey("fright_forest/fright_fungus");
     public static final RegistryKey<PlacedFeature> LICHOSS_PATCH = registerKey("fright_forest/lichoss_patch");
     public static final RegistryKey<PlacedFeature> SPIRALING_VINES = registerKey("fright_forest/spiraling_vines");
-    public static final RegistryKey<PlacedFeature> FRIGHT_FOREST_VEGETATION = registerKey("fright_forest/fright_forest_vegetation");
+    public static final RegistryKey<PlacedFeature> FRIGHT_FUNGUS_VEGETATION = registerKey("fright_forest/fright_fungus_vegetation");
+    public static final RegistryKey<PlacedFeature> HANGING_EMBER_ROOTS = registerKey("fright_forest/hanging_hanging_ember_roots");
+    public static final RegistryKey<PlacedFeature> BASALT_VEGETATION = registerKey("fright_forest/basalt_vegetation");
     public static final RegistryKey<PlacedFeature> SOUL_FIRE_PATCH_LICHOSS = registerKey("fright_forest/patch_soul_fire_lichoss");
     public static final RegistryKey<PlacedFeature> BASALT_ROCK = registerKey("fright_forest/basalt_rock");
 

@@ -4,7 +4,7 @@
   "has_precipitation": false,
   "effects": {
     "sky_color": 7254527,
-    "fog_color": 3751778,
+    "fog_color": 2107452,
     "water_color": 4159204,
     "water_fog_color": 329011,
     "ambient_sound": "minecraft:ambient.soul_sand_valley.loop",
@@ -45,12 +45,6 @@
     "misc": [],
     "monster": [
       {
-        "type": "minecraft:skeleton",
-        "weight": 20,
-        "minCount": 5,
-        "maxCount": 5
-      },
-      {
         "type": "minecraft:ghast",
         "weight": 50,
         "minCount": 4,
@@ -73,10 +67,6 @@
       "charge": 0.7
     },
     "minecraft:ghast": {
-      "energy_budget": 0.15,
-      "charge": 0.7
-    },
-    "minecraft:skeleton": {
       "energy_budget": 0.15,
       "charge": 0.7
     },
@@ -104,7 +94,6 @@
     [
       "minecraft:spring_open",
       "minecraft:patch_fire",
-      "minecraft:patch_soul_fire",
       "soulfulnether:fright_forest/patch_soul_fire_lichoss",
       "minecraft:glowstone_extra",
       "minecraft:glowstone",
@@ -126,7 +115,9 @@
       "minecraft:red_mushroom_normal",
       "soulfulnether:fright_forest/fright_fungus",
       "soulfulnether:fright_forest/spiraling_vines",
-      "soulfulnether:fright_forest/fright_forest_vegetation"
+      "soulfulnether:fright_forest/basalt_vegetation",
+      "soulfulnether:fright_forest/fright_fungus_vegetation",
+      "soulfulnether:fright_forest/hanging_ember_roots"
     ]
   ]
 }
