@@ -9,6 +9,7 @@ import net.minecraft.util.Identifier;
 
 public final class SoulfulItemTags {
     public static final TagKey<Item> SOULROOT_FOODS = createTag("soulroot_foods");
+    public static final TagKey<Item> FRIGHT_STEMS = createTag("fright_stems");
 
     private SoulfulItemTags() {
     }
