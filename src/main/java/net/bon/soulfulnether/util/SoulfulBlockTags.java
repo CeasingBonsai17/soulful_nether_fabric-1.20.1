@@ -9,7 +9,7 @@ import net.minecraft.util.Identifier;
 
 public final class SoulfulBlockTags {
         public static final TagKey<Block> SOUL_CONVERTING_BLOCKS = createTag("soul_converting_blocks");
-        public static final TagKey<Block> FRIGHT_STEMS = createTag("fright_stems");
+//        public static final TagKey<Block> FRIGHT_STEMS = createTag("fright_stems");
         public static final TagKey<Block> FRIGHT_WART_BLOCKS = createTag("fright_wart_blocks");
         public static final TagKey<Block> LICHOSS = createTag("lichoss");
         public static final TagKey<Block> LICHOSS_REPLACEABLE = createTag("lichoss_replaceable");
