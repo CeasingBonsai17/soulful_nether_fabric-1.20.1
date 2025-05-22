@@ -1,7 +1,13 @@
 {
   "variants": {
-    "": {
+    "hanging=false": {
       "model": "soulfulnether:block/lichoss_carpet"
+    },
+    "hanging=true": {
+      "model": "soulfulnether:block/lichoss_carpet",
+      "x": 180,
+      "y": 180,
+      "uvlock": true
     }
   }
 }

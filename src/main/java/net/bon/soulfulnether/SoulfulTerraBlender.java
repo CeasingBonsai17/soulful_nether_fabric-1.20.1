@@ -2,7 +2,6 @@ package net.bon.soulfulnether;
 
 import net.bon.soulfulnether.worldgen.SoulfulNetherRegion;
 import net.bon.soulfulnether.worldgen.SoulfulSurfaceRules;
-import net.bon.soulfulnether.worldgen.feature.SoulfulFeature;
 import terrablender.api.Regions;
 import terrablender.api.SurfaceRuleManager;
 import terrablender.api.TerraBlenderApi;

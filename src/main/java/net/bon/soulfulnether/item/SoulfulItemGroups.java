@@ -5,7 +5,6 @@ import net.bon.soulfulnether.block.SoulfulBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -30,6 +29,7 @@ public class SoulfulItemGroups {
                         entries.add(SoulfulBlocks.FRIGHT_PRESSURE_PLATE);
                         entries.add(SoulfulBlocks.FRIGHT_BUTTON);
                         entries.add(SoulfulBlocks.LICHOSS_BLOCK);
+                        entries.add(SoulfulBlocks.HANGING_LICHOSS);
                         entries.add(SoulfulBlocks.LICHOSS_CARPET);
                         entries.add(SoulfulBlocks.EMBER_ROOTS);
                         entries.add(SoulfulBlocks.FRIGHT_WART_BLOCK);

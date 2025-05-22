@@ -1,8 +1,8 @@
 package net.bon.soulfulnether.block;
 
 import net.bon.soulfulnether.SoulfulNether;
-import net.bon.soulfulnether.block.custom.*;
-import net.bon.soulfulnether.block.sapling.HugeFrightFungusGenerator;
+import net.bon.soulfulnether.block.type.*;
+import net.bon.soulfulnether.worldgen.feature.SoulfulConfiguredFeatures;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -21,7 +21,6 @@ public class SoulfulBlocks {
 
     public static final Block SOULROOTS = registerBlockWithoutItem("soulroots",
             new SoulrootsBlock(FabricBlockSettings.copyOf(Blocks.BEETROOTS).mapColor(MapColor.CYAN).replaceable().noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.CROP).pistonBehavior(PistonBehavior.DESTROY)));
-
     public static final Block SPIRALING_VINES = registerBlock("spiraling_vines",
             new SpiralingVinesBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES).mapColor(MapColor.BLACK).ticksRandomly().noCollision().breakInstantly().sounds(BlockSoundGroup.WEEPING_VINES).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block SPIRALING_VINES_PLANT = registerBlockWithoutItem("spiraling_vines_plant",
@@ -48,40 +47,44 @@ public class SoulfulBlocks {
     public static final Block FRIGHT_FENCE_GATE = registerBlock("fright_fence_gate",
             new FenceGateBlock(FabricBlockSettings.copyOf(Blocks.WARPED_FENCE_GATE).mapColor(MapColor.LIGHT_BLUE_GRAY),SoulfulWoodType.FRIGHT));
     public static final Block FRIGHT_DOOR = registerBlock("fright_door",
-            new DoorBlock(AbstractBlock.Settings.create().mapColor(FRIGHT_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS).strength(3.0F).nonOpaque().pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.LIGHT_BLUE_GRAY), SoulfulBlockSetType.FRIGHT));
+            new DoorBlock(FabricBlockSettings.create().mapColor(FRIGHT_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS).strength(3.0F).nonOpaque().pistonBehavior(PistonBehavior.DESTROY).mapColor(MapColor.LIGHT_BLUE_GRAY), SoulfulBlockSetType.FRIGHT));
     public static final Block FRIGHT_TRAPDOOR = registerBlock("fright_trapdoor",
-            new TrapdoorBlock(AbstractBlock.Settings.create().mapColor(FRIGHT_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS).strength(3.0F).nonOpaque().allowsSpawning(Blocks::never).mapColor(MapColor.LIGHT_BLUE_GRAY), SoulfulBlockSetType.FRIGHT));
+            new TrapdoorBlock(FabricBlockSettings.create().mapColor(FRIGHT_PLANKS.getDefaultMapColor()).instrument(Instrument.BASS).strength(3.0F).nonOpaque().allowsSpawning(Blocks::never).mapColor(MapColor.LIGHT_BLUE_GRAY), SoulfulBlockSetType.FRIGHT));
     public static final Block FRIGHT_PRESSURE_PLATE = registerBlock("fright_pressure_plate",
             new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, FabricBlockSettings.copyOf(Blocks.WARPED_PRESSURE_PLATE).mapColor(MapColor.LIGHT_BLUE_GRAY),SoulfulBlockSetType.FRIGHT));
     public static final Block FRIGHT_BUTTON = registerBlock("fright_button",
             new ButtonBlock(FabricBlockSettings.copyOf(Blocks.WARPED_BUTTON),SoulfulBlockSetType.FRIGHT,25,true));
     public static final Block FRIGHT_SIGN = registerBlockWithoutItem("fright_sign",
-            new SignBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
+            new SignBlock(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
     public static final Block FRIGHT_WALL_SIGN = registerBlockWithoutItem("fright_wall_sign",
-            new WallSignBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
+            new WallSignBlock(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
     public static final Block FRIGHT_HANGING_SIGN = registerBlockWithoutItem("fright_hanging_sign",
-            new HangingSignBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
+            new HangingSignBlock(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
     public static final Block FRIGHT_WALL_HANGING_SIGN = registerBlockWithoutItem("fright_wall_hanging_sign",
-            new WallHangingSignBlock(AbstractBlock.Settings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
+            new WallHangingSignBlock(FabricBlockSettings.create().mapColor(MapColor.LIGHT_BLUE_GRAY).instrument(Instrument.BASS).solid().noCollision().strength(1.0F), SoulfulWoodType.FRIGHT));
     public static final Block LICHOSS_BLOCK = registerBlock("lichoss_block",
             new LichossBlock(FabricBlockSettings.copyOf(Blocks.MOSS_BLOCK).mapColor(MapColor.CYAN)));
+    public static final Block HANGING_LICHOSS = registerBlock("hanging_lichoss",
+            new HangingLichossBlock(FabricBlockSettings.copyOf(Blocks.WEEPING_VINES).mapColor(MapColor.CYAN).ticksRandomly().noCollision().breakInstantly().sounds(BlockSoundGroup.WEEPING_VINES).pistonBehavior(PistonBehavior.DESTROY)));
+    public static final Block HANGING_LICHOSS_PLANT = registerBlockWithoutItem("hanging_lichoss_plant",
+            new HangingLichossPlantBlock(FabricBlockSettings.copyOf(Blocks.TWISTING_VINES_PLANT).mapColor(MapColor.CYAN).noCollision().breakInstantly().sounds(BlockSoundGroup.WEEPING_VINES).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block LICHOSS_CARPET = registerBlock("lichoss_carpet",
-            new CarpetBlock(AbstractBlock.Settings.create().mapColor(MapColor.CYAN).strength(0.1F).sounds(BlockSoundGroup.MOSS_CARPET).pistonBehavior(PistonBehavior.DESTROY)));
+            new LichossCarpetBlock(FabricBlockSettings.create().mapColor(MapColor.CYAN).strength(0.1F).sounds(BlockSoundGroup.MOSS_CARPET).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block EMBER_ROOTS = registerBlock("ember_roots",
-            new HangingEmberRootsBlock(FabricBlockSettings.copyOf(Blocks.WARPED_ROOTS).mapColor(MapColor.CYAN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.ROOTS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY)));
+            new EmberRootsBlock(FabricBlockSettings.copyOf(Blocks.WARPED_ROOTS).mapColor(MapColor.CYAN).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.ROOTS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY)));
     public static final Block FRIGHT_WART_BLOCK = registerBlock("fright_wart_block",
             new Block(FabricBlockSettings.copyOf(Blocks.WARPED_WART_BLOCK).mapColor(MapColor.BLACK)));
     public static final Block FRIGHT_FUNGUS = registerBlock("fright_fungus",
-            new FrightFungusBlock(new HugeFrightFungusGenerator(), AbstractBlock.Settings.create().mapColor(MapColor.BLACK).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.FUNGUS).pistonBehavior(PistonBehavior.DESTROY), LICHOSS_BLOCK));
+            new FrightFungusBlock(SoulfulConfiguredFeatures.FRIGHT_FUNGUS_PLANTED, FabricBlockSettings.create().mapColor(MapColor.BLACK).noCollision().ticksRandomly().breakInstantly().sounds(BlockSoundGroup.FUNGUS).pistonBehavior(PistonBehavior.DESTROY), LICHOSS_BLOCK));
     public static final Block FRIGHT_ROOTS = registerBlock("fright_roots",
             new FrightRootsBlock(FabricBlockSettings.copyOf(Blocks.WARPED_ROOTS).mapColor(MapColor.BLACK).replaceable().noCollision().breakInstantly().sounds(BlockSoundGroup.ROOTS).offset(AbstractBlock.OffsetType.XZ).pistonBehavior(PistonBehavior.DESTROY)));
 
     public static final Block POTTED_FRIGHT_FUNGUS = registerBlockWithoutItem ("potted_fright_fungus",
-            new FlowerPotBlock(FRIGHT_FUNGUS, (AbstractBlock.Settings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
+            new FlowerPotBlock(FRIGHT_FUNGUS, (FabricBlockSettings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
     public static final Block POTTED_EMBER_ROOTS = registerBlockWithoutItem ("potted_ember_roots",
-            new FlowerPotBlock(EMBER_ROOTS, (AbstractBlock.Settings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
+            new FlowerPotBlock(EMBER_ROOTS, (FabricBlockSettings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
     public static final Block POTTED_FRIGHT_ROOTS = registerBlockWithoutItem ("potted_fright_roots",
-            new FlowerPotBlock(FRIGHT_ROOTS, (AbstractBlock.Settings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
+            new FlowerPotBlock(FRIGHT_ROOTS, (FabricBlockSettings.create().breakInstantly().nonOpaque().pistonBehavior(PistonBehavior.DESTROY))));
 
 
 

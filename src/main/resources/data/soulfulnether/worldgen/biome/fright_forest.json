@@ -89,7 +89,8 @@
     [],
     [],
     [
-      "soulfulnether:fright_forest/lichoss_patch"
+      "soulfulnether:fright_forest/lichoss_patch",
+      "soulfulnether:fright_forest/lichoss_patch_ceiling"
     ],
     [
       "minecraft:spring_open",
@@ -113,11 +114,13 @@
       "minecraft:spring_lava",
       "minecraft:brown_mushroom_normal",
       "minecraft:red_mushroom_normal",
-      "soulfulnether:fright_forest/fright_fungus",
+      "soulfulnether:fright_forest/fright_fungi",
       "soulfulnether:fright_forest/spiraling_vines",
       "soulfulnether:fright_forest/basalt_vegetation",
-      "soulfulnether:fright_forest/fright_fungus_vegetation",
-      "soulfulnether:fright_forest/hanging_ember_roots"
+      "soulfulnether:fright_forest/fright_fungi_vegetation",
+      "soulfulnether:fright_forest/hanging_ember_roots",
+      "soulfulnether:fright_forest/hanging_lichoss",
+      "soulfulnether:fright_forest/hanging_lichoss_2"
     ]
   ]
 }

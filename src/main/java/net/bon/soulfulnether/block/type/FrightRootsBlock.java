@@ -1,11 +1,9 @@
-package net.bon.soulfulnether.block.custom;
+package net.bon.soulfulnether.block.type;
 
 import net.bon.soulfulnether.block.SoulfulBlocks;
 import net.bon.soulfulnether.util.SoulfulBlockTags;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.RootsBlock;
-import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.BlockView;
 

@@ -1,4 +1,4 @@
-package net.bon.soulfulnether.block.custom;
+package net.bon.soulfulnether.block.type;
 
 import net.bon.soulfulnether.block.SoulfulBlocks;
 import net.minecraft.block.*;
@@ -10,7 +10,8 @@ public class SpiralingVinesPlantBlock extends AbstractPlantBlock {
     public SpiralingVinesPlantBlock(AbstractBlock.Settings settings) {
         super(settings, Direction.UP, SHAPE, false);
     }
-        protected AbstractPlantStemBlock getStem() {
-            return (AbstractPlantStemBlock) SoulfulBlocks.SPIRALING_VINES;
+
+    protected AbstractPlantStemBlock getStem() {
+        return (AbstractPlantStemBlock)SoulfulBlocks.SPIRALING_VINES;
     }
 }

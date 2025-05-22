@@ -3,6 +3,7 @@
   "advancements.nether.not_quite_mandrakes.description": "Obtain a Soulroot by planting a beetroot into a valid soul related blocks",
   "advancements.nether.food_for_the_soul.title": "Food For the Soul",
   "advancements.nether.food_for_the_soul.description": "Eat all the Soulroot foods",
+
   "block.soulfulnether.fright_stem": "Fright Stem",
   "block.soulfulnether.fright_hyphae": "Fright Hyphae",
   "block.soulfulnether.stripped_fright_stem": "Stripped Fright Stem",
@@ -23,6 +24,7 @@
   "block.soulfulnether.fright_wart_block": "Fright Wart Block",
   "block.soulfulnether.spiraling_vines": "Spiraling Vines",
   "block.soulfulnether.lichoss_block": "Lichoss Block",
+  "block.soulfulnether.hanging_lichoss": "Hanging Lichoss",
   "block.soulfulnether.lichoss_carpet": "Lichoss Carpet",
   "block.soulfulnether.ember_roots": "Ember Roots",
   "item.soulfulnether.soulroot_seeds": "Soulroot Seeds",
@@ -30,5 +32,8 @@
   "item.soulfulnether.roasted_soulroot": "Roasted Soulroot",
   "item.soulfulnether.charred_soulroot": "Charred Soulroot",
   "item.soulfulnether.soulroot_pie": "Soulroot Pie",
-  "itemgroup.soulfulnether": "Soulful Nether"
+
+  "itemgroup.soulfulnether": "Soulful Nether",
+
+  "biome.soulfulnether.fright_forest": "Fright Forest"
 }

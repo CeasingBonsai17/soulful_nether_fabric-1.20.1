@@ -1,4 +1,14 @@
 {
-  "type": "soulfulnether:hanging_ember_roots",
-  "config": {}
+  "type": "minecraft:simple_block",
+  "config": {
+    "to_place": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "soulfulnether:ember_roots",
+        "Properties": {
+          "hanging": "true"
+        }
+      }
+    }
+  }
 }

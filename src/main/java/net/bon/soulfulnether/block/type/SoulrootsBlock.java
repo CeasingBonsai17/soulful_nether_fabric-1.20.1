@@ -1,4 +1,4 @@
-package net.bon.soulfulnether.block.custom;
+package net.bon.soulfulnether.block.type;
 
 import net.bon.soulfulnether.item.SoulfulItems;
 import net.bon.soulfulnether.util.SoulfulBlockTags;
@@ -6,6 +6,7 @@ import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
@@ -34,6 +35,10 @@ public class SoulrootsBlock extends PlantBlock implements Fertilizable {
         this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(AGE, 0));
     }
 
+    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
+        return floor.isIn(SoulfulBlockTags.SOUL_CONVERTING_BLOCKS) && !floor.isIn(BlockTags.DIRT) && !floor.isOf(Blocks.FARMLAND);
+    }
+
     protected IntProperty getAgeProperty() {
         return AGE;
     }
@@ -45,10 +50,6 @@ public class SoulrootsBlock extends PlantBlock implements Fertilizable {
 
     public int getMaxAge() {
         return 5;
-    }
-
-    protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
-        return floor.isIn(SoulfulBlockTags.SOUL_CONVERTING_BLOCKS);
     }
 
     public ItemStack getPickStack(BlockView world, BlockPos pos, BlockState state) {
@@ -84,10 +85,6 @@ public class SoulrootsBlock extends PlantBlock implements Fertilizable {
         }
     }
 
-    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
-        builder.add(new Property[]{AGE});
-    }
-
     public boolean isFertilizable(WorldView world, BlockPos pos, BlockState state, boolean isClient) {
         return (Integer)state.get(AGE) < 5;
     }
@@ -99,6 +96,10 @@ public class SoulrootsBlock extends PlantBlock implements Fertilizable {
     public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
         int i = Math.min(5, (Integer)state.get(AGE) + 2);
         world.setBlockState(pos, (BlockState)state.with(AGE, i), 2);
+    }
+
+    protected void appendProperties(StateManager.Builder<Block, BlockState> builder) {
+        builder.add(new Property[]{AGE});
     }
 
     static {

@@ -1,13 +1,10 @@
 package net.bon.soulfulnether.worldgen.feature;
 
 import net.bon.soulfulnether.SoulfulNether;
-import net.bon.soulfulnether.worldgen.feature.custom.HangingEmberRootsFeature;
 import net.bon.soulfulnether.worldgen.feature.custom.SpiralingVinesFeature;
 import net.bon.soulfulnether.worldgen.feature.custom.SpiralingVinesFeatureConfig;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.registry.RegistryKey;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.gen.feature.*;
 
@@ -15,8 +12,7 @@ public class SoulfulFeature {
 
     public static Feature<SpiralingVinesFeatureConfig> SPIRALING_VINES = registerFeature("spiraling_vines",
             new SpiralingVinesFeature(SpiralingVinesFeatureConfig.CODEC));
-    public static Feature<DefaultFeatureConfig> HANGING_EMBER_ROOTS = registerFeature("hanging_ember_roots",
-            new HangingEmberRootsFeature(DefaultFeatureConfig.CODEC));
+
 
 
     public static <C extends FeatureConfig, F extends Feature<C>> F registerFeature(String name, F feature) {

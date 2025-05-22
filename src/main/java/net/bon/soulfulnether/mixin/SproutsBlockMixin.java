@@ -1,8 +1,8 @@
 package net.bon.soulfulnether.mixin;
 
+import net.bon.soulfulnether.block.SoulfulBlocks;
 import net.bon.soulfulnether.util.SoulfulBlockTags;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.RootsBlock;
 import net.minecraft.block.SproutsBlock;
 import net.minecraft.util.math.BlockPos;
 import org.spongepowered.asm.mixin.Mixin;
@@ -19,7 +19,7 @@ public class SproutsBlockMixin {
             cancellable = true
     )
     private void soulfulnether$changeCanPlantOnTop(BlockState floor, net.minecraft.world.BlockView world, BlockPos pos, CallbackInfoReturnable<Boolean> cir) {
-        if (floor.isIn(SoulfulBlockTags.LICHOSS)) {
+        if (floor.isOf(SoulfulBlocks.LICHOSS_BLOCK)) {
             cir.setReturnValue(true);
         }
     }
